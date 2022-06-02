@@ -2700,6 +2700,46 @@ ol {
   animation: pulse-border-2 1.5s linear infinite;
 }
 
+section{
+  padding: 60px 0;
+}
+
+#accordion-style-1 h1,
+#accordion-style-1 a{
+  color:#005D4B;
+}
+#accordion-style-1 .btn-link {
+  font-weight: 400;
+  color: #005D4B;
+  background-color: transparent;
+  text-decoration: none !important;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 25px;
+}
+
+#accordion-style-1 .card-body {
+  border-top: 2px solid #005D4B;
+}
+
+#accordion-style-1 .card-header .btn.collapsed .fa.main{
+  display:none;
+}
+
+#accordion-style-1 .card-header .btn .fa.main{
+  background: #005D4B;
+  padding: 13px 11px;
+  color: #ffffff;
+  width: 35px;
+  height: 41px;
+  position: absolute;
+  left: -1px;
+  top: 10px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  display:block;
+}
+
 .intro-video-area .intro-video-play .play-thumb a::after {
   position: absolute;
   content: '';
@@ -2712,6 +2752,62 @@ ol {
   -webkit-animation: pulse-border 1s linear infinite;
   animation: pulse-border 1s linear infinite;
 }
+
+.carousel-3d {
+  padding: 20px;
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.carousel-3d > * {
+  flex: 0 0 auto;
+}
+.carousel-3d figure {
+  margin: 0;
+  width: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.carousel-3d figure img,
+.carousel-3d figure div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.carousel-3d figure div:not(:first-of-type),
+.carousel-3d figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel-3d nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+.carousel-3d nav button {
+  flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #FFFFFF;
+  background: #50A091;
+  border: 1px solid #50A091;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+.carousel-3d nav button:hover {
+  color: #FFF;
+  background: #50A091;
+}
+
+
 
 @-webkit-keyframes pulse-border {
   0% {
